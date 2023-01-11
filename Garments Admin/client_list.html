@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title> Client Requirement Form </title>
+  <title>Dashboard - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -134,7 +134,7 @@
               <hr class="dropdown-divider">
             </li>
             <li class="dropdown-footer">
-              <a href="#">Show All notifications</a>
+              <a href="#">Show all notifications</a>
             </li>
 
           </ul><!-- End Notification Dropdown Items -->
@@ -267,6 +267,7 @@
     </nav><!-- End Icons Navigation -->
 
   </header><!-- End Header -->
+
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
@@ -581,176 +582,82 @@
 
 
 
-
   <main id="main" class="main">
 
 
 
 
-    <!-- Client Registration Form -->
-    <div class="col-12">
-      <div class="card">
+            <!-- Client List -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
 
 
-        <div class="card-body">
-          <h5 class="card-title"> Register As Client </h5>
+                <div class="card-body">
+                  <h5 class="card-title"> Client Status </h5>
 
-          <section class="section">
-            <div class="row">
-              <div class="col-lg-10 offset-1">
-      
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title"> To Get the sample you have to Fillup the Necessary Field </h5>
-      
-                    <!-- Client Necessary Form Elements -->
-                    <form>
-                      <div class="row mb-3">
-                        <label class="col-sm-3 col-form-label">Client ID</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" value="USA-2023-07" disabled>
-                          <!-- Example = eng-10-23-05 // Engineering Depratment Join in 2023 as 5th Employee -->
-                        </div>
-                      </div>
-      
-                      <div class="row mb-3">
-                        <label for="inputText" class="col-sm-3 col-form-label">Client Name </label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      
-                      <div class="row mb-3">
-                        <label class="col-sm-3 col-form-label">Country</label>
-                        <div class="col-sm-9">
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Select Country</option>
-                            <option value="USA">United State</option>
-                            <option value="IND">India</option>
-                            <option value="RSA">Russia</option>
-                            <option value="SA">South Africa</option>
-                          </select>
-                        </div>
-                      </div>
+                  <table class="table table-borderless datatable">
+                    <thead>
+                      <tr>
+                        <th scope="col"> ID</th>
+                        <th scope="col"> Client Name</th>
+                        <th scope="col"> Country </th>
+                        <th scope="col"> Working Process  </th>
+                        <th scope="col"> Status </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="#">#15</a></th>
+                        <td>Jhon Doe </td>
+                        <td><a href="#" class="text-primary">USA</a></td>
+                        <td> Waiting For Sample </td>
+                        <td><span class="badge bg-success"> 75 % Done </span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#16</a></th>
+                        <td> Karim Benzema </td>
+                        <td><a href="#" class="text-primary">AUS </a></td>
+                        <td> Order Placed </td>
+                        <td><span class="badge bg-warning">30% Done</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#09</a></th>
+                        <td>Jaqulin Harnandez</td>
+                        <td><a href="#" class="text-primary">Sri</a></td>
+                        <td> Ready for Shipment</td>
+                        <td><span class="badge bg-success">100% Shipment</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#04</a></th>
+                        <td>M Bappey</td>
+                        <td><a href="#" class="text-primar">EU</a></td>
+                        <td>Quality Testing Failed (ReBuilding)</td>
+                        <td><span class="badge bg-danger">0%</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#05</a></th>
+                        <td> Wong Ching Pong </td>
+                        <td><a href="#" class="text-primary">JER</a></td>
+                        <td> Quality Control Passed  </td>
+                        <td><span class="badge bg-success">90% Done</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-                      <div class="row mb-3">
-                        <label for="inputNumber" class="col-sm-3 col-form-label">Phone Number</label>
-                        <div class="col-sm-9">
-                          <input type="text" id="inputNumber" class="form-control">
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label for="inputNumber" class="col-sm-3 col-form-label">National ID No</label>
-                        <div class="col-sm-9">
-                          <input type="number" class="form-control">
-                        </div>
-                      </div>
-
-                      <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-3 pt-0">Gender</legend>
-                        <div class="col-sm-9">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Male" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                              Male
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Female">
-                            <label class="form-check-label" for="gridRadios2">
-                              Female
-                            </label>
-                          </div>
-                          <div class="form-check disabled">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios" value="other" disabled>
-                            <label class="form-check-label" for="gridRadios3">
-                              Other
-                            </label>
-                          </div>
-                        </div>
-                      </fieldset>
-
-                      <div class="row mb-3">
-                        <label for="inputDate" class="col-sm-3 col-form-label">Date Of Birth</label>
-                        <div class="col-sm-9">
-                          <input type="date" class="form-control">
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label for="inputNumber" class="col-sm-3 col-form-label">Upload Image </label>
-                        <div class="col-sm-9">
-                          <input class="form-control" type="file" id="formFile">
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label for="inputPassword" class="col-sm-3 col-form-label">Address</label>
-                        <div class="col-sm-9">
-                          <textarea class="form-control" style="height: 100px"></textarea>
-                        </div>
-                      </div>
-
-                      <!--Google Search by
-                      garments employee department and posts list
-                      
-                      https://textiletutorials.com/careers-in-clothing-and-textile-industry-list/ -->
-
-
-                      <div class="row mb-3">
-                        <label for="inputEmail" class="col-sm-3 col-form-label">Email </label>
-                        <div class="col-sm-9">
-                          <input type="email" class="form-control">
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
-                        <div class="col-sm-9">
-                          <input type="password" class="form-control">
-                        </div>
-                      </div>
-
-
-                      <div class="row mb-3">
-                        <div class="col-sm-9">
-                          <button type="submit" class="btn btn-primary">Add me as Happy Client </button>
-                        </div>
-                      </div>
-      
-                    </form><!-- End General Form Elements -->
-      
-                  </div>
                 </div>
-      
+
               </div>
-      
-            </div>
-          </section>
-        </div>
-
-      </div>
-    </div><!-- Client Registration From -->
-
-
-</main><!-- End #main -->
+            </div><!-- End Recent Sales -->
 
 
 
 
+    
 
 
 
-
-
-
-
-
-
-
-
-
-
+  
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer ">

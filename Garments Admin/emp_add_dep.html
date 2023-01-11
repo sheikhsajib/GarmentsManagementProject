@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title> Client Requirement Form </title>
+  <title> Create New Employee Form </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -267,6 +267,7 @@
     </nav><!-- End Icons Navigation -->
 
   </header><!-- End Header -->
+
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
@@ -580,177 +581,138 @@
   </aside><!-- End Sidebar-->
 
 
-
-
   <main id="main" class="main">
+        <!-- New Employee Form  -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
 
 
+                <div class="card-body">
+                  <h5 class="card-title"> Create New Department </h5>
+
+                  <section class="section">
+                    <div class="row">
+                      <div class="col-lg-10 offset-1">
+              
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Add Department and Job Designation </h5>
+              
+                            <!-- New Employee Form Elements -->
+                            <form>
 
 
-    <!-- Client Registration Form -->
-    <div class="col-12">
-      <div class="card">
+                              <div class="row mb-3">
+                                <label for="inputText" class="col-sm-3 col-form-label">Department Name </label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
 
-
-        <div class="card-body">
-          <h5 class="card-title"> Register As Client </h5>
-
-          <section class="section">
-            <div class="row">
-              <div class="col-lg-10 offset-1">
-      
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title"> To Get the sample you have to Fillup the Necessary Field </h5>
-      
-                    <!-- Client Necessary Form Elements -->
-                    <form>
-                      <div class="row mb-3">
-                        <label class="col-sm-3 col-form-label">Client ID</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" value="USA-2023-07" disabled>
-                          <!-- Example = eng-10-23-05 // Engineering Depratment Join in 2023 as 5th Employee -->
-                        </div>
-                      </div>
-      
-                      <div class="row mb-3">
-                        <label for="inputText" class="col-sm-3 col-form-label">Client Name </label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      
-                      <div class="row mb-3">
-                        <label class="col-sm-3 col-form-label">Country</label>
-                        <div class="col-sm-9">
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Select Country</option>
-                            <option value="USA">United State</option>
-                            <option value="IND">India</option>
-                            <option value="RSA">Russia</option>
-                            <option value="SA">South Africa</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label for="inputNumber" class="col-sm-3 col-form-label">Phone Number</label>
-                        <div class="col-sm-9">
-                          <input type="text" id="inputNumber" class="form-control">
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label for="inputNumber" class="col-sm-3 col-form-label">National ID No</label>
-                        <div class="col-sm-9">
-                          <input type="number" class="form-control">
-                        </div>
-                      </div>
-
-                      <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-3 pt-0">Gender</legend>
-                        <div class="col-sm-9">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Male" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                              Male
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Female">
-                            <label class="form-check-label" for="gridRadios2">
-                              Female
-                            </label>
-                          </div>
-                          <div class="form-check disabled">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios" value="other" disabled>
-                            <label class="form-check-label" for="gridRadios3">
-                              Other
-                            </label>
+                              <div class="row mb-3">
+                                <label for="inputNumber" class="col-sm-3 col-form-label">Post Designation</label>
+                                <div class="col-sm-9">
+                                  <input type="number" class="form-control">
+                                </div>
+                              </div>
+                              
+                              <div class="row mb-3">
+                                <div class="col-sm-9">
+                                  <button type="submit" class="btn btn-primary">Add Department </button>
+                                </div>
+                              </div>
+              
+                            </form><!-- End General Form Elements -->
+              
                           </div>
                         </div>
-                      </fieldset>
+              
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">List Of Salary Grade </h5>
+                            <!-- New Salary Grade Form Elements -->
+                                    
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col"> Department </th>
+                                  <th scope="col"> Post Designation </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th> HR </th>
+                                  <td> HR Admin </td>
+                                </tr>
+                                <tr>
+                                  <th> HR </th>
+                                  <td> HR Manager </td>
+                                </tr>
+                                <tr>
+                                  <th> HR </th>
+                                  <td> HR Exicutive </td>
+                                </tr>
+                                
+                                <tr>
+                                  <th> Production </th>
+                                  <td> Production Manager </td>
+                                </tr>
+                                <tr>
+                                  <th> Production </th>
+                                  <td> Production Supervisor </td>
+                                </tr>
+                                <tr>
+                                  <th> Production </th>
+                                  <td> Assistant Production Officer </td>
+                                </tr>
+                                <tr>
+                                  <th> Production </th>
+                                  <td> Shift Incharge </td>
+                                </tr>
+                                <tr>
+                                  <th> Production </th>
+                                  <td> General Manager </td>
+                                </tr>
+                                <tr>
+                                  <th> Production </th>
+                                  <td> Machine Engineer </td>
+                                </tr>
+                                
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                        </div> <!-- List Card Finish -->
+                        
+              
 
-                      <div class="row mb-3">
-                        <label for="inputDate" class="col-sm-3 col-form-label">Date Of Birth</label>
-                        <div class="col-sm-9">
-                          <input type="date" class="form-control">
-                        </div>
+
+
+
+
+
                       </div>
-
-                      <div class="row mb-3">
-                        <label for="inputNumber" class="col-sm-3 col-form-label">Upload Image </label>
-                        <div class="col-sm-9">
-                          <input class="form-control" type="file" id="formFile">
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label for="inputPassword" class="col-sm-3 col-form-label">Address</label>
-                        <div class="col-sm-9">
-                          <textarea class="form-control" style="height: 100px"></textarea>
-                        </div>
-                      </div>
-
-                      <!--Google Search by
-                      garments employee department and posts list
-                      
-                      https://textiletutorials.com/careers-in-clothing-and-textile-industry-list/ -->
+              
+                    </div>
+                  </section>
+              
 
 
-                      <div class="row mb-3">
-                        <label for="inputEmail" class="col-sm-3 col-form-label">Email </label>
-                        <div class="col-sm-9">
-                          <input type="email" class="form-control">
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
-                        <div class="col-sm-9">
-                          <input type="password" class="form-control">
-                        </div>
-                      </div>
 
-
-                      <div class="row mb-3">
-                        <div class="col-sm-9">
-                          <button type="submit" class="btn btn-primary">Add me as Happy Client </button>
-                        </div>
-                      </div>
-      
-                    </form><!-- End General Form Elements -->
-      
-                  </div>
                 </div>
-      
+
               </div>
-      
-            </div>
-          </section>
-        </div>
-
-      </div>
-    </div><!-- Client Registration From -->
-
-
-</main><!-- End #main -->
+            </div><!-- End Recent Sales -->
 
 
 
 
+    
 
 
 
-
-
-
-
-
-
-
-
-
-
+  
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer ">

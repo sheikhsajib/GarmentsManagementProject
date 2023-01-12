@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title> Create New Employee Form </title>
+  <title> Employees Monthly Salary Reports </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -317,14 +317,17 @@
               <i class="bi bi-circle"></i><span> Add Salary Grade </span>
             </a>
           </li>
-
-
+          <li>
+            <a href="emp_salary_report.html">
+              <i class="bi bi-circle"></i><span> Monthy salary Report </span>
+            </a>
+          </li>
           
         </ul>
       </li><!-- End HRM Nav -->
 
 
-    
+
       <!-- End Client Nav -->
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#client-nav" data-bs-toggle="collapse" href="#">
@@ -588,167 +591,56 @@
 
 
                 <div class="card-body">
-                  <h5 class="card-title">New Salary Grade And List </h5>
+                  <h5 class="card-title"> Employees Monthly Salary Report </h5>
 
                   <section class="section">
                     <div class="row">
                       <div class="col-lg-10 offset-1">
               
+                        
                         <div class="card">
                           <div class="card-body">
-                            <h5 class="card-title">Add Grade Based On Salary Range </h5>
-              
-                            <!-- New Employee Form Elements -->
-                            <form>
-
-                              
-                              <div class="row mb-3">
-                                <label class="col-sm-3 col-form-label">Salary Grade</label>
-                                <div class="col-sm-9">
-                                  <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Grade</option>
-                                    <option value="grade-1"> Grade 1 </option>
-                                    <option value="grade-2"> Grade 2 </option>
-                                    <option value="grade-3"> Grade 3 </option>
-                                    <option value="grade-4"> Grade 4 </option>
-                                    <option value="grade-5"> Grade 5 </option>
-                                    <option value="grade-6"> Grade 6 </option>
-                                    <option value="grade-7"> Grade 7 </option>
-                                    <option value="grade-8"> Grade 8 </option>
-                                    <option value="grade-9"> Grade 9 </option>
-                                    <option value="grade-10"> Grade 10 </option>
-                                    <option value="grade-11"> Grade 11 </option>
-                                    <option value="grade-12"> Grade 12 </option>
-                                    <option value="grade-13"> Grade 13 </option>
-                                    <option value="grade-14"> Grade 14 </option>
-                                    <option value="grade-15"> Grade 15 </option>
-                                    <option value="grade-16"> Grade 16 </option>
-                                    <option value="grade-17"> Grade 17 </option>
-                                    <option value="grade-18"> Grade 18 </option>
-                                    <option value="grade-19"> Grade 19 </option>
-                                    <option value="grade-20"> Grade 20 </option>
-                                    
-                                  </select>
-                                </div>
-                              </div>
-
-                              <div class="row mb-3">
-                                <label for="inputText" class="col-sm-3 col-form-label"> Basic Salary </label>
-                                <div class="col-sm-9">
-                                  <input placeholder="TK" type="number" class="form-control">
-                                </div>
-                              </div>
-
-                              <div class="row mb-3">
-                                <label for="inputText" class="col-sm-3 col-form-label"> House Rent </label>
-                                <div class="col-sm-9">
-                                  <input placeholder=" % of Basic" type="number" class="form-control">
-                                </div>
-                              </div>
-
-                              <div class="row mb-3">
-                                <label for="inputText" class="col-sm-3 col-form-label"> Health Allowance </label>
-                                <div class="col-sm-9">
-                                  <input placeholder=" % of Basic" type="number" class="form-control">
-                                </div>
-                              </div>
-
-                              <div class="row mb-3">
-                                <div class="col-sm-9">
-                                  <button type="submit" class="btn btn-primary">Add Salary Grade </button>
-                                </div>
-                              </div>
-              
-                            </form><!-- End General Form Elements -->
-              
-                          </div>
-                        </div>
-              
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">List Of Salary Grade </h5>
+                            <h5 class="card-title"> Short list of Employee Attendance </h5>
+                            
                             <!-- New Salary Grade Form Elements -->
-                                    
-                            <table class="table  ">
+                            <h5 class="text-center">Company Working <span>January 2023 </span> ,<span> 26 Days</span>   </h5>
+                            <table class="table">
                               <thead>
                                 <tr>
-                                  <th> Grade </th>
-                                  <th> Basic Salary </th>
-                                  <th> House Rent </th>
-                                  <th> Health Allowance </th>
+                                  <th> EmpID </th>
+                                  <th> Name </th>
+                                  <th> Present </th>
+                                  <th> Leave </th>
+                                  <th> Absent </th>
+                                  <th> Overtime (Hr) </th>
                                   <th> Total Salary </th>
-                                  <th> Action </th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <th > Grade 1 </th>
-                                  <td> 80,000 </td>
-                                  <td> 40% </td>
-                                  <td> 10% </td>
-                                  <td> 1,20,000 </td>
-                                  <td>
-                                    <a class="btn btn-danger">Delete</a>
-                                    <a class="btn btn-warning">Update</a>
-                                  </td>
+                                  <th> HR-G1-23-05 </th>
+                                  <td> Yasin Arafat </td>
+                                  <td> 21 </td>
+                                  <td> 2 </td>
+                                  <td> 3 </td>
+                                  <td> 35 Hours </td>
+                                  <td> 52,350 </td>
                                 </tr>
-                                <tr>
-                                  <th> Grade 2 </th>
-                                  <td> 70,000 </td>
-                                  <td> 40% </td>
-                                  <td> 10% </td>
-                                  <td> 1,15,000 </td>
-                                  <td>
-                                    <a class="btn btn-danger">Delete</a>
-                                    <a class="btn btn-warning">Update</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th > Grade 3 </th>
-                                  <td> 60,000 </td>
-                                  <td> 40% </td>
-                                  <td> 10% </td>
-                                  <td> 90,000 </td>
-                                  <td>
-                                    <a class="btn btn-danger">Delete</a>
-                                    <a class="btn btn-warning">Update</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th> Grade 4 </th>
-                                  <td> 50,000 </td>
-                                  <td> 40% </td>
-                                  <td> 10% </td>
-                                  <td> 75,000 </td>
-                                  <td>
-                                    <a class="btn btn-danger">Delete</a>
-                                    <a class="btn btn-warning">Update</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th> Grade 20 </th>
-                                  <td> 8,000 </td>
-                                  <td> 40% </td>
-                                  <td> 10% </td>
-                                  <td> 12,000 </td>
-                                  <td>
-                                    <a class="btn btn-danger">Delete</a>
-                                    <a class="btn btn-warning">Update</a>
-                                  </td>
-                                </tr>
+                               
+                                
                                 
                               </tbody>
                             </table>
-
-
-
-
-
-
-
                           </div>
-                        </div>
+                        </div> <!-- List Card Finish -->
+                        
               
+
+
+
+
+
+
                       </div>
               
                     </div>
@@ -760,7 +652,7 @@
                 </div>
 
               </div>
-            </div><!-- End Card -->
+            </div><!-- End Recent Sales -->
 
 
 
@@ -771,6 +663,16 @@
 
   
   </main><!-- End #main -->
+
+
+
+
+
+
+
+
+
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer ">

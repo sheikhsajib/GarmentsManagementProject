@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -43,6 +44,22 @@ public class ClientRegistrationController {
     public String allClientList(Model m){
         m.addAttribute("allClient", crService.getAllClientList());
         return "client_list";
+    }
+
+    // Go to Client Profile Page
+    @RequestMapping("/client_profile")
+    public String clientProfilePage(){
+        return "client_profile";
+    }
+
+
+    @RequestMapping("/client_profile/{cid}")
+    public String clientProfile(){
+//        ClientRegistration cr = new  ClientRegistrationService().findClientById(cid);
+//
+//        m.addAttribute("Client Profile", cr);
+
+        return "client_profile";
     }
 
 

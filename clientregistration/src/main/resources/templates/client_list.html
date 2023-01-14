@@ -15,7 +15,10 @@
             <div class="card-body">
                 <h5 class="card-title"> Client Status </h5>
 
-                <table class="table table-borderless datatable">
+
+                <table class="table table-bordered datatable">
+
+
                     <thead>
                     <tr>
                         <th scope="col"> ID</th>
@@ -26,13 +29,17 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr th:each="cl : ${allClient}">
-                        <td th:text="${cl.cid}"></td>
-                        <td th:text="${cl.cName}"></td>
-                        <td th:text="${cl.cCountry}"></td>
-                        <td th:text="${cl.cGender}"></td>
-                        <td th:text="${cl.cEmail}"></td>
-                    </tr>
+                        <tr th:each="cl : ${allClient}">
+                            <a class="row" th:href="@{'/client_profile/'+${cl.cid}}" >
+                            <td th:text="${cl.cid}"></td>
+                            <td th:text="${cl.cName}"></td>
+                            <td th:text="${cl.cCountry}"></td>
+                            <td th:text="${cl.cGender}"></td>
+                            <td>
+                                <a th:href="@{'/client_profile/'+${cl.cid}}" class="btn btn-warning"> Update </a>
+                            </td>
+                            </a>
+                        </tr>
                     </tbody>
                 </table>
             </div>

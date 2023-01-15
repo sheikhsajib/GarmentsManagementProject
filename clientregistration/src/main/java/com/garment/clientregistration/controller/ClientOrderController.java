@@ -27,6 +27,15 @@ public class ClientOrderController {
     }
 
 
+    // Order Form Via Client Profile
+//    @RequestMapping("/client_order_form/{cid}")
+//    public String clientOrderPage(Model m){
+//        m.addAttribute("clientOrderform", new ClientOrder());
+//        m.addAttribute("title", "Client Order form");
+//        return "client_order_form";
+//    }
+
+
     //Client Order Form Action to save client Order Details to dataBase
     @RequestMapping(value = "/new_order_reg", method = RequestMethod.POST)
     public String addNewOrder(@ModelAttribute("clientOrderform") ClientOrder co, Model m ){

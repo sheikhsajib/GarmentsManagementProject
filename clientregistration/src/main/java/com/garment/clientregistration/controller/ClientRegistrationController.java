@@ -32,7 +32,7 @@ public class ClientRegistrationController {
 
     //Client Registration From Action to save client data to dataBase
     @RequestMapping(value = "/new_client_reg", method = RequestMethod.POST)
-    public String addNewClient(@ModelAttribute("client") ClientRegistration cr, Model m ){
+    public String addNewClient(@ModelAttribute("clientRegTable") ClientRegistration cr, Model m ){
 
         crService.saveClientInformation(cr);
         return "redirect:/client_list";
@@ -54,14 +54,22 @@ public class ClientRegistrationController {
 
 
     @RequestMapping("/client_profile/{cid}")
-    public String clientProfile(){
+    public String clientProfile(@PathVariable("cid") Integer cid, Model m){
 //        ClientRegistration cr = new  ClientRegistrationService().findClientById(cid);
-//
-//        m.addAttribute("Client Profile", cr);
+//        m.addAttribute("ClientProfile", cr);
 
+        m.addAttribute("ClientProfile",  crService.findClientById(cid));
         return "client_profile";
     }
 
+    @RequestMapping("/update_client_profile/{cid}")
+    public String clientUpdateForm(@PathVariable("cid") Integer cid, Model m){
+        m.addAttribute("title", "Update Client");
+        m.addAttribute("clientRegTable",  crService.findClientById(cid));
+//        m.addAttribute("clientUpdateTable", new ClientRegistration());
+
+        return "/client_reg_form";
+    }
 
 
 }

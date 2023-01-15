@@ -11,7 +11,7 @@
 
   </div><!-- End Page Title -->
 
-  <section class="section profile">
+  <section class="section profile" th:object="${ClientProfile}" >
     <div class="row">
       <div class="col-xl-6">
 
@@ -20,31 +20,29 @@
           <div class="container pb-3 tab-content">
             <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
-              <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-              <h2> Karim Benzema </h2>
+              <img th:src="@{${'/assets/img/profile-img.jpg'}}" alt="Profile" class="rounded-circle">
+              <h2 th:text="*{cName}"> Karim Benzema </h2>
 
-              <img src="assets/img/karimSigneture.png" alt="Signature" class="">
+              <img th:src="@{${'/assets/img/karimSigneture.png'}}" alt="Signature" class="">
 
             </div>
 
             <h4>Marchendizing Information </h4>
 
             <div class="row p-1">
-              <div class="col-lg-5 col-md-5 label ">Client ID</div>
-              <div class="col-lg-7 col-md-7"> USA-23-17 </div>
+              <div class="col-lg-5 col-md-5 label "  >Client ID</div>
+              <div class="col-lg-7 col-md-7"  th:text="*{cid}"> USA-23-17 </div>
             </div>
             <div class="row p-1">
               <div class="col-lg-6 col-md-6 label">Happy Client From </div>
-              <div class="col-lg-6 col-md-6">01-Jan-2019</div>
+              <div class="col-lg-6 col-md-6"  >01-Jan-2019</div>
             </div>
-            <div class="row p-1">
-              <div class="col-lg-6 col-md-6 label">Department</div>
-              <div class="col-lg-6 col-md-6">Production</div>
-            </div>
+
             <div class="row p-1">
               <div class="col-lg-6 col-md-6 label">Status</div>
               <div class="col-lg-6 col-md-6">Active</div>
             </div>
+
             <div class="row p-1">
               <div class="col-lg-6 col-md-6 label">Order On Process </div>
               <div class="col-lg-6 col-md-6"> 3 orders</div>
@@ -65,6 +63,12 @@
               <div class="col-lg-6 col-md-6">#lskhfklasjdhalalksdjj</div>
             </div>
 
+
+            <div class="row mb-3">
+              <div class="text-center">
+                <a th:href="@{'/client_order_form/'}" type="button" class="btn btn-primary">Order New Product </a>
+              </div>
+            </div>
 
           </div>
 
@@ -92,48 +96,48 @@
 
                 <div class="row">
                   <div class="col-lg-4 col-md-4 label ">Full Name</div>
-                  <div class="col-lg-8 col-md-8"> Karim Benzema </div>
+                  <div class="col-lg-8 col-md-8"  th:text="*{cName}"> Karim Benzema </div>
                 </div>
 
 
                 <div class="row">
                   <div class="col-lg-4 col-md-4 label">Phone Number </div>
-                  <div class="col-lg-8 col-md-8">+880 1749 123456 </div>
+                  <div class="col-lg-8 col-md-8"  th:text="*{cPhoneNumber}">+880 1749 123456 </div>
                 </div>
 
                 <div class="row">
                   <div class="col-lg-4 col-md-4 label">National ID No </div>
-                  <div class="col-lg-8 col-md-8">9876 654321 </div>
+                  <div class="col-lg-8 col-md-8"  th:text="*{cNid}">9876 654321 </div>
                 </div>
                 <div class="row">
                   <div class="col-lg-4 col-md-4 label">Gender </div>
-                  <div class="col-lg-8 col-md-8">Male </div>
+                  <div class="col-lg-8 col-md-8"  th:text="*{cGender}" >Male </div>
                 </div>
 
                 <div class="row">
                   <div class="col-lg-4 col-md-4 label">Date Of Birth </div>
-                  <div class="col-lg-8 col-md-8"> 31-Jan-1985 </div>
+                  <div class="col-lg-8 col-md-8" th:text="*{cDob}" > 31-Jan-1985 </div>
                 </div>
 
                 <div class="row">
                   <div class="col-lg-4 col-md-4 label">Country</div>
-                  <div class="col-lg-8 col-md-8">United State</div>
+                  <div class="col-lg-8 col-md-8" th:text="*{cCountry}" >United State</div>
                 </div>
 
                 <div class="row">
                   <div class="col-lg-4 col-md-4 label"> Address</div>
-                  <div class="col-lg-8 col-md-8"> Times Square, NY, USA </div>
+                  <div class="col-lg-8 col-md-8" th:text="*{cAddress}" > Times Square, NY, USA </div>
                 </div>
 
                 <div class="row">
                   <div class="col-lg-4 col-md-4 label">Email</div>
-                  <div class="col-lg-8 col-md-8">benzema@imclient.com</div>
+                  <div class="col-lg-8 col-md-8" th:text="*{cEmail}" >benzema@imclient.com</div>
                 </div>
 
 
                 <div class="row mb-3">
                   <div class="col-sm-9">
-                    <button type="button" class="btn btn-primary">Update Information </button>
+                    <a th:href="@{'/update_client_profile/'+${cid}}" type="button" class="btn btn-primary">Update Information </a>
                   </div>
                 </div>
 

@@ -13,7 +13,8 @@
 
 
         <div class="card-body">
-          <h5 class="card-title"> Register As Client </h5>
+          <h5 class="card-title" th:if="${cid!=null}"> Update Your Marchendizing Profile </h5>
+          <h5 class="card-title" th:if="${cid==null}"> Register As Client </h5>
 
           <section class="section">
             <div class="row">
@@ -130,7 +131,8 @@
 
                       <div class="row mb-3">
                         <div class="col-sm-9">
-                          <button type="submit" class="btn btn-primary">Add me as Happy Client </button>
+                          <a th:if="${cid!=null}" type="submit" class="btn btn-primary"> Update My Data </a>
+                          <a th:if="${cid==null}" type="submit" class="btn btn-primary">Add me as Happy Client </a>
                         </div>
                       </div>
       

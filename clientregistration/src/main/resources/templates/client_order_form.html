@@ -17,27 +17,27 @@
             <div class="row">
               <div class="col-lg-10 offset-1">
       
-                <div class="card">
+                <div class="card" >
                   <div class="card-body">
                     <h5 class="card-title"> To Get the sample you have to Fillup the Necessary Field </h5>
       
                     <!-- Client Necessary Form Elements -->
                     <form th:action="@{/new_order_reg}" th:object="${clientOrderform}" method="post">
-                    <!--
-                           <div class="row mb-3">
-                             <label class="col-sm-3 col-form-label">Order ID</label>
-                             <div class="col-sm-9">
-                               <input  th:field="*{cid}" type="text" class="form-control" value="USA-order-75" disabled>
 
+                           <div class="row mb-3">
+                             <label for="cid" class="col-sm-3 col-form-label">Client ID</label>
+                             <div class="col-sm-9">
+                               <input th:value="${ClientProfile.cid}" id="cid" name="cid" hidden type="text" class="form-control" >
+                               <span th:text="${ClientProfile.cid}"> </span>
+                             </div>
+                          </div>
+
+                      <div class="row mb-3">
+                        <label for="coName" class="col-sm-3 col-form-label">Client Name </label>
+                        <div class="col-sm-9">
+                          <input th:value="${ClientProfile.cName}" id="coName" name="coName"  type="text"  class="form-control">
                         </div>
                       </div>
-                    -->
-<!--                      <div class="row mb-3">-->
-<!--                        <label for="client_name" class="col-sm-3 col-form-label">Client Name </label>-->
-<!--                        <div class="col-sm-9">-->
-<!--                          <input  th:field="*{coName}"  type="text" th:value="Karim Benzema" id="client_name" class="form-control" disabled>-->
-<!--                        </div>-->
-<!--                      </div>-->
 
                       
                       <div class="row mb-3">
@@ -91,9 +91,9 @@
                       </div>
 
                       <div class="row mb-3">
-                        <label class="col-sm-3 col-form-label">Order Status</label>
+                        <label for="orderStatus" class="col-sm-3 col-form-label">Order Status</label>
                         <div class="col-sm-9">
-                          <input th:field="*{orderStatus}" th:value="OrderPlaced" type="text" class="form-control">
+                          <input value="OrderPlaced" id="orderStatus" name="orderStatus" type="text" class="form-control">
                           <!-- Order Placed Means Order -->
                         </div>
                       </div>

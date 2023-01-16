@@ -18,8 +18,8 @@ public class ClientOrder {
     private int coid; //Client Order ID will Generate like COUNTRY-YEAR-Serial = USA-23-07
 
     //02
-//    @Column(length = 35, nullable = false) //Client Name
-//    private String coName;
+    @Column(length = 35, nullable = false) //Client Name
+    private String coName;
 
     //03
     @Column(length = 50, nullable = false) //
@@ -30,9 +30,7 @@ public class ClientOrder {
     // Status 1 = order placed - waiting for Admin Approve
     // Status 2 = Order Approve for sample - in Client list will show Order Approved;
 
-
-
- //   private int cid; //cid will be foreign Key
+    private int cid; //cid will be foreign Key
 
 
 

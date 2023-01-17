@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -19,10 +20,11 @@ public class ClientOrderController {
     ClientRegistrationService crService;
 
     // Go to Client Order form
-    @RequestMapping("/client_order_form")
-    public String clientOrderPage(Model m){
+    @RequestMapping("/client_order_form/{cid}")
+    public String clientOrderPage(@PathVariable("cid") Integer cid, Model m){
         m.addAttribute("clientOrderform", new ClientOrder());
         m.addAttribute("title", "Client Order form");
+        m.addAttribute("ClientProfile",  crService.findClientById(cid));
         return "client_order_form";
     }
 

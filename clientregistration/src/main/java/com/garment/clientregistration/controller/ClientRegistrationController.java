@@ -24,15 +24,16 @@ public class ClientRegistrationController {
     // Go to Client Registration form
     @RequestMapping("/client_reg_form")
     public String clientRegForm(Model m){
-        m.addAttribute("clientRegTable", new ClientRegistration());
+        m.addAttribute("client_all_data", new ClientRegistration());
+//        m.addAttribute("allClient", crService.getAllClientList());
         m.addAttribute("title", "New Client Registration Form");
         return "client_reg_form";
     }
 
 
     //Client Registration From Action to save client data to dataBase
-    @RequestMapping(value = "/new_client_reg", method = RequestMethod.POST)
-    public String addNewClient(@ModelAttribute("clientRegTable") ClientRegistration cr, Model m ){
+    @RequestMapping(value = "/save_client_submit", method = RequestMethod.POST)
+    public String addNewClientForm(@ModelAttribute("client_all_data") ClientRegistration cr, Model m ){
 
         crService.saveClientInformation(cr);
         return "redirect:/client_list";
@@ -66,7 +67,8 @@ public class ClientRegistrationController {
     @RequestMapping("/update_client_profile/{cid}")
     public String clientUpdateForm(@PathVariable("cid") Integer cid, Model m){
         m.addAttribute("title", "Update Client");
-        m.addAttribute("clientRegTable",  crService.findClientById(cid));
+        ClientRegistration cr = crService.findClientById(cid);
+        m.addAttribute("client_all_data", cr);
 //        m.addAttribute("clientUpdateTable", new ClientRegistration());
 
         return "/client_reg_form";

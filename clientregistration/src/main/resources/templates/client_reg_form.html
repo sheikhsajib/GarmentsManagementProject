@@ -4,9 +4,6 @@
 
 <main id="main" class="main">
 
-
-
-
     <!-- Client Registration Form -->
     <div class="col-12">
       <div class="card">
@@ -24,11 +21,11 @@
                     <h5 class="card-title"> To Get the sample you have to Fillup the Necessary Field </h5>
       
                     <!-- Client Necessary Form Elements -->
-                    <form   th:action="@{/new_client_reg}" th:object="${clientRegTable}" method="post">
+                    <form   th:action="@{/save_client_submit}" th:object="${client_all_data}" method="post">
                       <div class="row mb-3">
                         <label for="client_id" class="col-sm-3 col-form-label">Client ID</label>
                         <div class="col-sm-9">
-                          <input th:field="*{cid}" id="client_id" placeholder="USA-2023-07" class="form-control"   disabled>
+                          <input th:field="*{cid}" id="client_id" placeholder="USA-2023-07" class="form-control" type="hidden">
                           <!-- Example = eng-10-23-05 // Engineering Depratment Join in 2023 as 5th Employee -->
                         </div>
                       </div>
@@ -87,7 +84,7 @@
                       </fieldset>
 
                       <div class="row mb-3">
-                        <labelfor="client_dob" class="col-sm-3 col-form-label">Date Of Birth</label>
+                        <label for="client_dob" class="col-sm-3 col-form-label">Date Of Birth</label>
                         <div class="col-sm-9">
                           <input th:field="*{cDob}" id="client_dob" type="date" class="form-control">
                         </div>
@@ -129,8 +126,8 @@
 
                       <div class="row mb-3">
                         <div class="col-sm-9">
-                          <a th:if="${cid!=null}" type="submit" class="btn btn-primary"> Update My Data </a>
-                          <a th:if="${cid==null}" type="submit" class="btn btn-primary">Add me as Happy Client </a>
+                          <button th:if="${cid!=null}" type="submit" class="btn btn-primary"> Update My Data </button>
+                          <button th:if="${cid==null}" type="submit" class="btn btn-primary">Add me as Happy Client </button>
                         </div>
                       </div>
       

@@ -25,9 +25,9 @@
                     <form th:action="@{/new_order_reg}" th:object="${clientOrderform}" method="post">
 
                            <div class="row mb-3">
-                             <label for="cid" class="col-sm-3 col-form-label">Client ID</label>
+                             <label for="coCid" class="col-sm-3 col-form-label">Client ID</label>
                              <div class="col-sm-9">
-                               <input th:value="${ClientProfile.cid}" id="cid" name="cid" hidden type="text" class="form-control" >
+                               <input th:value="${ClientProfile.cid}" id="coCid" name="coCid" hidden type="text" class="form-control" >
                                <span th:text="${ClientProfile.cid}"> </span>
                              </div>
                           </div>

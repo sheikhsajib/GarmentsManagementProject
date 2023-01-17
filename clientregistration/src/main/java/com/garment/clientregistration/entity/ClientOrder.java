@@ -30,8 +30,10 @@ public class ClientOrder {
     // Status 1 = order placed - waiting for Admin Approve
     // Status 2 = Order Approve for sample - in Client list will show Order Approved;
 
-    private int cid; //cid will be foreign Key
 
+    @ManyToOne
+    @JoinColumn(name = "cid_fk")
+    ClientRegistration coCid;
 
 
 

@@ -41,12 +41,9 @@
                       <div class="row mb-3">
                         <label class="col-sm-3 col-form-label">Country</label>
                         <div class="col-sm-9">
-                          <select th:field="*{cCountry}" class="form-select" aria-label="Default select example">
-                            <option th:value="''" > Select Country</option>
-                            <option th:value="'USA'"> United State</option>
-                            <option th:value="'RSA'"> Russia </option>
-                            <option th:value="'IND'" >India</option>
-                            <option th:value="'SA'" > South Africa </option>
+                          <select th:field="*{country}"  class="form-select" aria-label="Default select example">
+                            <option  th:each="vc : ${viewCountry}"  th:value="${vc.cntId}" th:text="${vc.cntName}" > Select Country</option>
+
                           </select>
                         </div>
                       </div>

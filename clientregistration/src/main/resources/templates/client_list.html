@@ -33,7 +33,7 @@
                             <a class="row" th:href="@{'/client_profile/'+${cl.cid}}" >
                             <td th:text="${cl.cid}"></td>
                             <td th:text="${cl.cName}"></td>
-                            <td th:text="${cl.cCountry}"></td>
+                            <td th:text="${cl.country.cntName}"></td>
                             <td th:text="${cl.cGender}"></td>
                             <td>
                                 <a th:href="@{'/client_profile/'+${cl.cid}}" class="btn btn-warning"> Check Profile  </a>

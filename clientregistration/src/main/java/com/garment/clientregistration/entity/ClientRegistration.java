@@ -19,9 +19,7 @@ public class ClientRegistration {
     //02
     @Column(length = 35, nullable = false) //Client Name
     private String cName;
-    //03
-    @Column(length = 15, nullable = false)  // Client Country Name
-    private String cCountry;
+
     //04
     @Column(length = 20, nullable = false)
     private String cPhoneNumber;
@@ -47,6 +45,10 @@ public class ClientRegistration {
     //11
     @Column(length = 64, nullable = false)
     private String cPassword;
+
+    @ManyToOne
+    @JoinColumn(name = "cntId_fk")
+    Country country;
 
 
 

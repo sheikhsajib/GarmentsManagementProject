@@ -60,7 +60,7 @@ public class ClientRegistrationController {
 //        ClientRegistration cr = new  ClientRegistrationService().findClientById(cid);
 //        m.addAttribute("ClientProfile", cr);
 
-//        m.addAttribute("clientRegTable",  crService.findClientById(cid));
+      m.addAttribute("ClientProfile",  crService.findClientById(cid));
         return "client_profile";
     }
 

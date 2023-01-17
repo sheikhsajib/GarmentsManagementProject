@@ -39,6 +39,7 @@ public class ClientRegistrationController {
     }
 
 
+
     //This Page will Show All list of Client Data
     @RequestMapping("/client_list")
     public String allClientList(Model m){
@@ -58,7 +59,7 @@ public class ClientRegistrationController {
 //        ClientRegistration cr = new  ClientRegistrationService().findClientById(cid);
 //        m.addAttribute("ClientProfile", cr);
 
-        m.addAttribute("ClientProfile",  crService.findClientById(cid));
+//        m.addAttribute("clientRegTable",  crService.findClientById(cid));
         return "client_profile";
     }
 

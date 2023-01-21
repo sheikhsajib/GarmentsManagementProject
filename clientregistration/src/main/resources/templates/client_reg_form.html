@@ -8,7 +8,6 @@
     <div class="col-12">
       <div class="card">
 
-
         <div class="card-body">
           <h5 class="card-title" th:if="${cid!=null}"> Update Your Marchendizing Profile </h5>
           <h5 class="card-title" th:if="${cid==null}"> Register As Client </h5>
@@ -105,9 +104,8 @@
 
                       <!--Google Search by
                       garments employee department and posts list
-                      
-                      https://textiletutorials.com/careers-in-clothing-and-textile-industry-list/ -->
 
+                      https://textiletutorials.com/careers-in-clothing-and-textile-industry-list/ -->
 
                       <div class="row mb-3">
                         <label for="inputEmail" class="col-sm-3 col-form-label">Email </label>
@@ -115,13 +113,13 @@
                           <input th:field="*{cEmail}" id="inputEmail" type="email" class="form-control">
                         </div>
                       </div>
+
                       <div class="row mb-3">
                         <label for="client_pass_field" class="col-sm-3 col-form-label">Password</label>
                         <div class="col-sm-9">
                           <input th:field="*{cPassword}"  id="client_pass_field" type="password" class="form-control">
                         </div>
                       </div>
-
 
                       <div class="row mb-3">
                         <div class="col-sm-9">

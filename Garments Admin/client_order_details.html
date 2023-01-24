@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="progress_style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.5.0
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Garments Management</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show All notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Sheikh Sajib</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Sheikh Sajib</h6>
+              <span>Softwere Engineer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+  
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span> Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#hrm-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-hr"></i><span> HRM </span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="hrm-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="emp_all.html">
+              <i class="bi bi-circle"></i><span> All Employees</span>
+            </a>
+          </li>
+          <li>
+            <a href="emp_create_new.html">
+              <i class="bi bi-circle"></i><span> Create New Employee</span>
+            </a>
+          </li>
+          <li>
+            <a href="emp_profile.html">
+              <i class="bi bi-circle"></i><span> Employee Profile </span>
+            </a>
+          </li>
+          <li>
+            <a href="emp_update.html">
+              <i class="bi bi-circle"></i><span> Update Employee Status </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="emp_add_dep.html">
+              <i class="bi bi-circle"></i><span> Add Department </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="emp_add_grade.html">
+              <i class="bi bi-circle"></i><span> Add Salary Grade </span>
+            </a>
+          </li>
+
+
+          
+        </ul>
+      </li><!-- End HRM Nav -->
+
+
+    
+      <!-- End Client Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#client-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-hr"></i><span> Client </span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="client-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="client_list.html">
+              <i class="bi bi-circle"></i><span> Clients List </span>
+            </a>
+          </li>
+          <li>
+            <a href="client_reg_form.html">
+              <i class="bi bi-circle"></i><span> Client Registration Form </span>
+            </a>
+          </li>
+          <li>
+            <a href="client_order_form.html">
+              <i class="bi bi-circle"></i><span> Client Order Form </span>
+            </a>
+          </li>
+          <li>
+            <a href="client_profile.html">
+              <i class="bi bi-circle"></i><span> Client Profile </span>
+            </a>
+          </li>
+          <li>
+            <a href="client_update.html">
+              <i class="bi bi-circle"></i><span> Update Client Status </span>
+            </a>
+          </li>
+
+        </ul>
+      </li><!-- End Client Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span> Production Line </span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="client_order_details.html">
+              <i class="bi bi-circle"></i><span> Client Order Details </span>
+            </a>
+          </li>
+
+        </ul>
+      </li><!-- End Components Nav -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1> Client Order Details </h1>
+    </div><!-- End Page Title -->
+
+    <section class="section profile">
+      <div class="row">
+        <div class="col-xl-10 offset-1">
+
+          <div class="card">
+           
+            <div class="container pb-3 ">
+            <h4  class="p-2"> Order Placer Information </h4>
+            <div class="card-body profile-card pt-4 row">
+              <div class="col-md-7">
+                <h2> Karim Benzema </h2>
+                <p> Client ID : USA-23-17 </p>
+              </div>
+
+              <div class="col-md-3 ">
+                <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle float-end">
+              </div>
+
+            </div>
+
+            <h4> Order Information </h4>
+
+            <div class="row p-1">
+              <div class="col-lg-5 col-md-5 label ">Order ID</div>
+              <div class="col-lg-7 col-md-7"> Sweter-23-05 </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> Order Placed Date </div>
+              <div class="col-lg-6 col-md-6"> 05-Jan-2023</div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> Order Type</div>
+              <div class="col-lg-6 col-md-6"> Sweter </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> Quantity of Product </div>
+              <div class="col-lg-6 col-md-6"> 500 PCS </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> Order On Process </div>
+              <div class="col-lg-6 col-md-6"> 3 orders</div>
+            </div>
+
+
+            <h4 class="pt-3" > Production Requisition From Production Manager </h4>
+
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-5 label ">Fiber </div>
+              <div class="col-lg-6 col-md-7"> Cotton Linen, Wool, Silk, Hair, Triacetate, Nylon, Polyester, Acrylic, Vinal </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> Fabric </div>
+              <div class="col-lg-6 col-md-6"> Aertex, Angora, Braid, Brocade, Chiffon, Canvas, Chambray, Denim, Fleece, Hopsack </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> Chemical </div>
+              <div class="col-lg-6 col-md-6"> Whitening agent, Wetting agent, Fixing agent, Detergent, Silicon, Stiffering agent, Water proofing agent, De-foaming agent, Enzymes, Caustic soda, Soda ash, Acetic acid, Oxalic acid </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> 	Swing Machine </div>
+              <div class="col-lg-6 col-md-6"> 45 Pcs </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> 	Overlock Sewing Machine </div>
+              <div class="col-lg-6 col-md-6"> 10 Pcs </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> Zigzag sewing machine </div>
+              <div class="col-lg-6 col-md-6"> 10 Pcs </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> Button Hole Machine </div>
+              <div class="col-lg-6 col-md-6"> 5 Pcs </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-lg-6 col-md-6 label"> Worker </div>
+              <div class="col-lg-6 col-md-6"> 70 Worker </div>
+            </div>
+
+
+
+          </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-xl-10 offset-1">
+
+          <div class="card">
+            <div class="card-body pt-3">
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
+
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview"> Progress Workflow </button>
+                </li>
+
+              </ul>
+              
+              <div class="row">
+              <div class="production_process">
+                <div class="card">
+                    <ul class="progress_bar">
+                        <li>Production Requisition 
+                  <button class="btn btn-primary float-end"> Activate Workflow </button>
+                        </li>
+                        <li>Cutting Process 
+                          <button class="btn btn-primary float-end"> Activate Workflow </button>
+                        </li>
+                        <li>Stiching Process </li> 
+                        <li>Dyeing Process </li> 
+                        <li>Washing Process </li> 
+                        <li>Quality Testing  </li> 
+                        <li>Ironing </li> 
+                        <li>Packaging  </li> 
+                        <li>Ready For Shipment  </li> 
+                    </ul>
+                </div>
+              </div>
+            </div> <!-- End Progress Step -->
+            <script>
+              var p_bar=document.querySelectorAll(".progress_bar li");
+              var p_bar_before=document.querySelectorAll(".progress_bar li::before");
+              var p_bar_after=document.querySelectorAll(".progress_bar li::after");
+
+              p_bar.forEach((all_list)=>{
+                  all_list.onclick=function(event){
+                      if(all_list.classList.contains('active')){
+                          all_list.classList.remove('active'); 
+                      }
+                      else{
+                          all_list.classList.add('active'); 
+                      } 
+                  }  
+              });
+            </script>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer ">
+    <div class="copyright">
+      &copy; Copyright <strong><span>GarmentsManagement</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="#"> IsDB Round 51 JEE CCSL Group-1 </a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="progress.js"></script>
+
+</body>
+
+</html>
